@@ -27,8 +27,8 @@ video {
 }
 
 svg {
-  font-size: 18vh;
   font-weight: bold;
+  font-size: min(max(70px, 11vw), 17vh); /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
 
   position: absolute;
   top: 0;
@@ -57,24 +57,4 @@ svg {
     margin-bottom: 15vh;
 }
 
-
-@media screen and (max-width: 950px) {
-  svg{
-      font-size: 14vh;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  svg{
-      font-size: 11.5vh;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  svg{
-      font-size: 9vh;
-  }
-}
-
-/* Header*/
 
