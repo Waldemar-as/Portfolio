@@ -28,7 +28,8 @@ video {
 
 svg {
   font-weight: bold;
-  font-size: min(max(70px, 11vw), 17vh); /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
+  font-size: min(max(70px, 11vw), 17vh);
+  /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
 
   position: absolute;
   top: 0;
@@ -38,23 +39,61 @@ svg {
 }
 
 
-.myimagediv{
+.myimagediv {
   position: absolute;
   height: 100%;
-  width: 100%;  
-  
+  width: 100%;
+
+
   display: flex;
   align-items: center;
   align-content: center;
 }
 
-.myimage {
-    border-radius: 50%;
-    max-width: 25vh;
-    height: auto;
 
-    margin: auto;
-    margin-bottom: 15vh;
+/* https://www.w3schools.com/css/css3_animations.asp */
+/* text {
+
+  opacity: 1;
+  animation: ease-out textgrowth;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+} */
+
+.myimage {
+  animation: ease-out slideInFromBottom;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+  border-radius: 50%;
+  max-width: 25vh;
+  height: auto;
+
+  margin: auto;
+  margin-bottom: 15vh;
 }
 
 
+
+@keyframes textgrowth {
+  0% {
+    font-size: 1vw;
+  }
+
+  100% {
+    font-size: min(max(70px, 11vw), 17vh);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translatey(+100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
