@@ -14,7 +14,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-}
+  pointer-events: none; /* ermöglicht das durchklicken */
+} 
 
 video {
   width: 100%;
@@ -30,6 +31,7 @@ svg {
   font-weight: bold;
   font-size: min(max(70px, 11vw), 17vh);
   /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
+  overflow: hidden;
 
   position: absolute;
   top: 0;
@@ -62,7 +64,7 @@ svg {
 
 .myimage {
   animation: ease-out slideInFromBottom;
-  animation-duration: 1.5s;
+  animation-duration: 1.0s;
   animation-fill-mode: forwards;
 
   opacity: 0;
@@ -97,3 +99,76 @@ svg {
     opacity: 1;
   }
 }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* Navbar */
+#mainNavbar .navbar-brand {
+
+
+  color: #022E3B;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#mainNavbar .navbar-brand:hover {
+  color: gray;
+}
+
+#mainNavbar .nav-link {
+  color: #022E3B;
+}
+
+
+.navbar {
+  animation: ease-out opacity;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.0s;
+  opacity: 0;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: none;
+  font-weight: 600;
+  /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important; */
+}
+
+.fixed-top {
+  /* position: fixed; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+.brand:hover {
+  color: grey;
+}
+
+#mainNavbar .nav-link:hover {
+  color: Grey;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border:  none;
+}
+
+/* Navbar END*/
