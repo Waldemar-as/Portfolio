@@ -126,7 +126,7 @@ svg {
 
 
 .navbar {
-  transition: 1s;
+  transition: 0.3s;
 
   animation: ease-out changeopacity;
   animation-duration: 0.5s;
