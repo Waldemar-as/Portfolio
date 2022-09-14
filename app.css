@@ -67,19 +67,36 @@ svg {
 } */
 
 .myimage {
-  animation: ease-out slideInFromBottom;
+  /* animation: ease-out changeopacity;
   animation-duration: 1.0s;
   animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 
-  opacity: 0;
+  opacity: 0; */
   border-radius: 50%;
   max-width: 25vh;
   height: auto;
 
   margin: auto;
-  margin-bottom: 15vh;
+  /* margin-bottom: 15vh;  */
+  z-index: 1;
 }
 
+.myimagediv h1{
+  animation: ease-out changeopacity;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.0s;
+  opacity: 0;
+
+  margin: auto;
+  margin-bottom: 25vh; 
+  z-index: 1;
+  color: #022E3B;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
 
 
 /* @keyframes textgrowth {
@@ -103,6 +120,10 @@ svg {
     opacity: 1;
   }
 }
+
+
+
+
 
 /* ###Header END### */
 
