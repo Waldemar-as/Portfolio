@@ -45,7 +45,7 @@ svg {
 }
 
 
-.myimagediv {
+.headercenterdiv {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -82,7 +82,7 @@ svg {
   z-index: 1;
 }
 
-.myimagediv h1{
+.headercenterdiv h1{
   animation: ease-out changeopacity;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
