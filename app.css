@@ -57,6 +57,7 @@ svg {
 }
 
 
+
 /* https://www.w3schools.com/css/css3_animations.asp */
 /* text {
 
@@ -83,6 +84,7 @@ svg {
 }
 
 .headercenterdiv h1{
+  transition: 1s;
   animation: ease-out changeopacity;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -122,7 +124,11 @@ svg {
 }
 
 
-
+@media screen and (max-width: 767px){
+  .headercenterdiv h1 {
+    margin-bottom: 22vh;
+  }
+}
 
 
 /* ###Header END### */
