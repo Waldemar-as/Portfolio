@@ -5,7 +5,7 @@ onepage mit seiten wie: https://olaolu.dev/
 1. Übermich
 2. Lebenslauf
 3. Tätigkeiten im Beruf (Arbeitszeugniss comvistec), Tätigkeiten GUS siehe unten für ideen. im internet suchen wsa für tätigkeiten server admin usw haben.
-4. Projekte https://opdra.de/, https://interface.com-vistec.de/ mit E-mail(Waldemar.as@htomail.hat eine)
+4. Projekte https://opdra.de/, https://interface.com-vistec.de/ mit E-mail(Waldemar.as@htomail.hat eine) Waybackmaschine https://web.archive.org/web/20220201045249/https://interface.com-vistec.de/
 
 Ideen:
 https://youtu.be/At6XyItIHsE
@@ -15,6 +15,7 @@ https://youtu.be/KWVJTRWILjU
 https://youtu.be/izK5kG-xQX0
 
 
+Powershell GUS
 
 
 Verantwortung für den 2nd Level Support
