@@ -4,12 +4,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: ghostwhite;
 }
 
 
 /* ###Header### */
 .headerbackground {
-  background-image: url(img/BlueWhite4.png);
+  background-image: url(img/BlueWhite3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +95,7 @@ svg {
   margin: auto;
   margin-bottom: 25vh; 
   z-index: 1;
-  color: #d2c5c4;
+  color: ghostwhite;
   font-size: 1.5rem;
   font-weight: 600;
 
@@ -129,6 +130,7 @@ svg {
     margin-bottom: 22vh;
   }
 }
+
 
 
 /* ###Header END### */
@@ -168,8 +170,8 @@ svg {
   background-color: none;
   font-weight: 600;
 
-
-  /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important; */
+  background-color: ghostwhite;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important; 
 }
 
 .fixed-top {
@@ -219,7 +221,7 @@ svg {
 /* navbar when scrolled */
 .navbar.scrolled {
   transition: 1s;
-  background: white
+  background: ghostwhite
 
 }
 
