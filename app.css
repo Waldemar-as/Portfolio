@@ -9,7 +9,7 @@ body {
 
 /* ###Header### */
 .headerbackground {
-  background-image: url(img/BlueWhite3.png);
+  background-image: url(img/BlueWhite4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +94,7 @@ svg {
   margin: auto;
   margin-bottom: 25vh; 
   z-index: 1;
-  color: #e1c0b7;
+  color: #d2c5c4;
   font-size: 1.5rem;
   font-weight: 600;
 
@@ -138,7 +138,7 @@ svg {
 /* ###Navbar### */
 
 #mainNavbar .navbar-brand {
-  color: #e1c0b7;
+  color: #d2c5c4;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -150,7 +150,7 @@ svg {
 
 
 #mainNavbar .nav-link {
-  color: #e1c0b7;
+  color: #d2c5c4;
 }
 
 
@@ -167,6 +167,7 @@ svg {
   padding-right: 5vw;
   background-color: none;
   font-weight: 600;
+
 
   /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important; */
 }
@@ -188,7 +189,7 @@ svg {
 
 .selected {
   text-decoration: underline;
-  text-decoration-color: #e65100;
+  text-decoration-color: #F75C03;
 }
 
 .navbar-light .navbar-toggler {
@@ -210,7 +211,7 @@ svg {
 /* navbar background when small */
 /* @media screen and (max-width: 767px){
   .navbar {
-      background: #e1c0b7;
+      background: #d2c5c4;
   }
 } */
 
@@ -218,7 +219,7 @@ svg {
 /* navbar when scrolled */
 .navbar.scrolled {
   transition: 1s;
-  background: #761393
+  background: white
 
 }
 
@@ -262,7 +263,7 @@ svg {
 
 
 .animated-icon2 span {
-  background: #e65100;
+  background: #F75C03;
 }
 
 .animated-icon2 span:nth-child(1) {
