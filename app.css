@@ -33,16 +33,19 @@ video {
 }
 
 svg {
-  font-weight: bold;
-  font-size: min(max(70px, 11vw), 17vh);
-  /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
-  overflow: hidden;
 
+  font-size: min(max(0px, 11vw), 200vh); /* Wichtig, Updated das svg damit es in immer der Mitte bleibt. "dummy update"*/
+  /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
+
+  /* font-weight: bold; */
+
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
-  /* transition: 1s font-size; */
+  /* transition: 0.1s font-size; */
 }
 
 
