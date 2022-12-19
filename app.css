@@ -3,7 +3,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: ghostwhite;
 }
 
@@ -132,7 +132,12 @@ svg {
   .headercenterdiv h1 {
     margin-bottom: 22vh;
   }
+
 }
+
+
+
+
 
 
 
@@ -313,3 +318,57 @@ svg {
 /* Hamurger END*/
 /* ###Navbar END### */
 
+
+.BackgroundSideWay {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(134deg, #6972B5 0%, #434e8c );
+    transform: skewY(-3deg);
+    z-index: -1;
+    pointer-events: none;
+    transition: 1s;
+}
+
+
+.hJElzf {
+  margin: 100px auto;
+  font-weight: 900;
+  color: #6972B5;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+.qzBti {
+  /* display: flex; */
+  margin-top: 200px;
+}
+
+
+.aboutme {
+  padding-top: 100px;
+  transition: 1s;
+}
+
+.aboutme p{
+  color: ghostwhite;
+
+
+}
+
+.aboutme h2{
+  color: #F75C03;
+}
+
+
+
+@media screen and (max-width: 767px){
+  .aboutme{
+   padding-top: 30px;
+  }
+  .BackgroundSideWay{
+  min-height: 600px;
+  }
+}
