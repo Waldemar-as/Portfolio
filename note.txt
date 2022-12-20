@@ -6,6 +6,9 @@ https://coolors.co/034d63-840032-fffbfc-e6af2e-e88d67
 
 
 
+Unterstrich anpassen beim skrollen in der navbar für die navigation.
+
+
 About Me und Projekte etc bei anderen seite abgucken bevor programmierst.
 
 
