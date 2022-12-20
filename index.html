@@ -14,17 +14,17 @@
   <link rel="stylesheet" href="app.css">
 
   <!-- Fonts -->
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
-    </style>
+  </style>
 
 </head>
 
 <body>
 
+  <!-- navbar -->
   <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md fixed-top">
-    <a href="index.html" class="navbar-brand selected">HOME</a>
+    <a href="#Landingpage" class="navbar-brand selected">HOME</a>
     <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navLinks"
       aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
       <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
@@ -35,97 +35,85 @@
           <a class="nav-link" href="#">PROJECTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT ME</a>
+          <a class="nav-link" href="#AboutMeAnchor">ABOUT ME</a>
         </li>
     </div>
   </nav>
 
 
-
-  <div class="headerbackground">
+  <!-- Landingpage Header -->
+  <div id="Landingpage" class="headerbackground">
 
     <div class="headercenterdiv">
       <img class="myimage" src="img/me.png" alt="">
     </div>
 
-    <!-- <div class="headercenterdiv">
+    <div class="headercenterdiv">
       <h1>Welcome to my Portfolio</h1>
-    </div> -->
+    </div>
 
     <video class="clipped-video" muted loop autoplay>
       <source src="img/smoke.mp4">
       </source>
     </video>
 
-    <!-- svg mask text -->
+    <!-- svg mask  -->
     <!-- <svg height="100%" width="100%">
-              <clipPath id="text-overlay" width="100%" height="100%">
+              <clipPath id="mask-overlay" width="100%" height="100%">
                   <text x="50%" y="40%" text-anchor="middle">WALDEMAR</text>
                   <text x="50%" y="55%" text-anchor="middle">ASMUS</text>
               </clipPath>
-          </svg>  -->
+          </svg>  
+    -->
 
 
     <!-- svg mask circle -->
     <svg height="100%" width="100%">
-      <clipPath id="text-overlay" width="100%" height="100%">
+      <clipPath id="mask-overlay" width="100%" height="100%">
         <circle cx="50%" cy="50%" r="17vh" />
       </clipPath>
     </svg>
 
   </div>
 
+  <!-- About Me Section -->
+  <div id="AboutMeAnchor" style="height: 100vh">
 
-  <div style="height: 100vh">
-    <!-- <div>
-      <h1 class="hJElzf">About Me<h1>
-    </div> -->
     <div class="BackgroundSideWay">
     </div>
 
-
-
-
-    <!-- 
-    <article class="qzBti aboutme">
-      
-    </article> -->
-
-    <div class="container-xl qzBti">
+    <div id="anchor" class="container-xl" style="margin-top: 200px;">
       <div class="row aboutme">
-        <!-- <div class="col-2">
-          1 of 3
-        </div> -->
         <div class="col-12">
           <h2>About Me</h2>
           <p>
-            Hello, My name is Waldemar Asmus and welcome to my portfolio. 
+            Hello, My name is Waldemar Asmus and I am a software developer.
             <br>
             From a young age i have been fascinated by the world of technology. With a curious mind and a desire to
-            understand how things work, i have always been drawn to the field of computer science. In 2019 i
-            had  the oppurtunity to turn this into a career, and began the apprenticeship in this field.
+            understand how things work, i have always been drawn to the field of computer science.
+            The challenge of solving problems through logical and abstract thinking, as well as turning an idea into
+            reality, is highly enjoyable to me.
+            In 2019, I was fortunate enough to turn this passion into a career when I began an apprenticeship in the
+            field. Currently, I am working at GUS ERP and am excited to continue learning and growing in my profession.
           </p>
+          <br>
           <h2>My strengths</h2>
           <p>
             I am a quick learner who is able to adapt to new situations and concepts quickly.
             <br>
-            Being organized helps me stay on top of tasks and commitments.
+            Maintaining organization through the use of notes and documentation allows me to effectively manage my tasks
+            and fulfill my commitments.
             <br>
-            I am reliable and take responsibility for my actions and the work I do.
-            <br> 
-            Regardless of whether I am working on a team or individually, I always ensure that my tasks are completed to the best of my ability.
+            I have a strong sense of responsibility, im willing to take on tasks that others may not want to do or feel
+            not responsible for.
             <br>
-
-
+            Regardless of whether I am working on a team or individually, I always ensure that my tasks are completed to
+            the best of my ability.
+            <br>
           </p>
         </div>
-
-
-
-
       </div>
     </div>
-
 
   </div>
 

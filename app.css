@@ -16,10 +16,8 @@ body {
   background-size: cover;
   height: 100vh;
 
-
   /* enables to click through the div*/
   pointer-events: none;
-
 }
 
 video {
@@ -28,8 +26,8 @@ video {
 }
 
 .clipped-video {
-  -webkit-clip-path: url(#text-overlay);
-  clip-path: url(#text-overlay);
+  -webkit-clip-path: url(#mask-overlay);
+  clip-path: url(#mask-overlay);
 }
 
 svg {
@@ -61,6 +59,23 @@ svg {
 }
 
 
+.headercenterdiv h1{
+  transition: 1s;
+  animation: ease-out changeopacity;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.0s;
+  opacity: 0;
+
+
+  margin: auto;
+  margin-bottom: 25vh; 
+  z-index: 1;
+  color: ghostwhite;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 
 /* https://www.w3schools.com/css/css3_animations.asp */
 /* text {
@@ -87,23 +102,29 @@ svg {
   z-index: 1;
 }
 
-.headercenterdiv h1{
-  transition: 1s;
-  animation: ease-out changeopacity;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 1.0s;
-  opacity: 0;
 
-  margin: auto;
-  margin-bottom: 25vh; 
-  z-index: 1;
-  color: ghostwhite;
-  font-size: 1.5rem;
-  font-weight: 600;
 
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(+100%);
+    opacity: 0;
+  }
+}
 
 /* @keyframes textgrowth {
   0% {
@@ -134,6 +155,8 @@ svg {
   }
 
 }
+
+
 
 
 
@@ -216,6 +239,7 @@ svg {
     opacity: 1;
   }
 }
+
 
 
 /* navbar background when small */
@@ -323,12 +347,12 @@ svg {
     position: absolute;
     left: 0px;
     width: 100%;
-    min-height: 500px;
+    /* min-height: 520px; */
     background: linear-gradient(134deg, #6972B5 0%, #434e8c );
     transform: skewY(-3deg);
     z-index: -1;
     pointer-events: none;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 
@@ -341,21 +365,14 @@ svg {
 }
 
 
-.qzBti {
-  /* display: flex; */
-  margin-top: 200px;
-}
-
-
 .aboutme {
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   transition: 1s;
 }
 
 .aboutme p{
   color: ghostwhite;
-
-
 }
 
 .aboutme h2{
@@ -363,12 +380,3 @@ svg {
 }
 
 
-
-@media screen and (max-width: 767px){
-  .aboutme{
-   padding-top: 30px;
-  }
-  .BackgroundSideWay{
-  min-height: 600px;
-  }
-}
