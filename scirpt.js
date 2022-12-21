@@ -45,18 +45,3 @@ $(document).ready(function () {
 });
 
 
-// Makes all scrolling to a anchor smooth
-document.querySelectorAll('a[href*="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-
-    const target = document.querySelector(this.getAttribute('href'));
-    const targetPosition = target.getBoundingClientRect().top;
-    const offsetPosition = targetPosition - 100; //stops above the anchor in pixel
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  });
-});

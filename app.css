@@ -1,3 +1,17 @@
+html{
+scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+  background-color: white;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6972B5;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -198,6 +212,8 @@ svg {
 
   padding-left: 5vw;
   padding-right: 5vw;
+  padding-bottom: 0;
+  padding-top: 0;
   background-color: none;
   font-weight: 600;
 
