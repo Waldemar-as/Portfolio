@@ -9,7 +9,7 @@ scroll-behavior: smooth;
   cursor: pointer;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #6972B5;
+  background-color: lightgray;
 }
 
 body {
@@ -364,7 +364,7 @@ svg {
     left: 0px;
     width: 100%;
     /* min-height: 520px; */
-    background: linear-gradient(134deg, #6972B5 0%, #434e8c );
+    background: linear-gradient(134deg, #6972B5 0%, #5A67AF );
     transform: skewY(-3deg);
     z-index: -1;
     pointer-events: none;
@@ -396,20 +396,19 @@ svg {
 }
 
 
-/* ###Footer### */
+/* ###Footer Wave### */
 *
 {
     margin: 0;
     padding: 0;
 }
 
-section{
+#wave{
   position: relative;
   width: 100%;
   height: 20vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-
 
 section .wave{
   position: absolute;
@@ -417,7 +416,7 @@ section .wave{
   left: 0;
   width: 100%;
   height: 100px;
-  background: url(img/wave.png);
+  background: url(img/wave.svg);
   background-size: 1000px;
 }
 
@@ -428,7 +427,6 @@ section .wave.wave1{
   animation-delay: 0s;
   bottom: 0;
 }
-
 
 section .wave.wave2{
   animation: animatewave 15s linear infinite;
@@ -463,3 +461,4 @@ section .wave.wave4{
   } 
  
  }
+ /* ###Footer Wave END### */
