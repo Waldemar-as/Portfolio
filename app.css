@@ -164,7 +164,7 @@ svg {
 }
 
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 767px) {
   .headercenterdiv h1 {
     margin-bottom: 22vh;
   }
