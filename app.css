@@ -1,5 +1,5 @@
-html{
-scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -8,6 +8,7 @@ scroll-behavior: smooth;
   background-color: white;
   cursor: pointer;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: lightgray;
 }
@@ -22,7 +23,7 @@ body {
 }
 
 
-/* ###Header### */
+/* ###Header Landingpage### */
 .headerbackground {
   background-image: url(img/BlueWhite3.png);
   background-position: center;
@@ -45,12 +46,11 @@ video {
 }
 
 svg {
-
-  font-size: min(max(0px, 11vw), 200vh); /* Wichtig, Updated das svg damit es in immer der Mitte bleibt. "dummy update"*/
+  font-size: min(max(0px, 11vw), 200vh);
+  /* Wichtig, Updated das svg damit es in immer der Mitte bleibt. "dummy update"*/
   /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
 
   /* font-weight: bold; */
-
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -73,7 +73,7 @@ svg {
 }
 
 
-.headercenterdiv h1{
+.headercenterdiv h1 {
   transition: 1s;
   animation: ease-out changeopacity;
   animation-duration: 0.5s;
@@ -81,9 +81,9 @@ svg {
   animation-delay: 1.0s;
   opacity: 0;
 
-  
+
   margin: auto;
-  margin-bottom: 25vh; 
+  margin-bottom: 25vh;
   z-index: 1;
   color: #d0d4d4;
   font-size: 1.5rem;
@@ -123,6 +123,7 @@ svg {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -134,6 +135,7 @@ svg {
     transform: translateX(0);
     opacity: 1;
   }
+
   to {
     transform: translateX(+100%);
     opacity: 0;
@@ -163,22 +165,15 @@ svg {
 }
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .headercenterdiv h1 {
     margin-bottom: 22vh;
   }
 
 }
 
+/* ###Header Landingpage### */
 
-
-
-
-
-
-
-
-/* ###Header END### */
 
 
 
@@ -218,7 +213,7 @@ svg {
   font-weight: 600;
 
   background-color: ghostwhite;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important; 
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 .fixed-top {
@@ -229,7 +224,6 @@ svg {
   left: 0;
   z-index: 1030;
 }
-
 
 
 #mainNavbar .nav-link:hover {
@@ -270,10 +264,7 @@ svg {
 .navbar.scrolled {
   transition: 1s;
   background: ghostwhite
-
 }
-
-
 
 
 /* Hamurger Icon https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/*/
@@ -359,16 +350,21 @@ svg {
 /* ###Navbar END### */
 
 
+
+
+
+
+/* ###About Me### */
 .BackgroundSideWay {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    /* min-height: 520px; */
-    background: linear-gradient(134deg, #6972B5 0%, #5A67AF );
-    transform: skewY(-3deg);
-    z-index: -1;
-    pointer-events: none;
-    /* transition: 1s; */
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  /* min-height: 520px; */
+  background: linear-gradient(134deg, #6972B5 0%, #5A67AF);
+  transform: skewY(-3deg);
+  z-index: -1;
+  pointer-events: none;
+  /* transition: 1s; */
 }
 
 
@@ -387,30 +383,32 @@ svg {
   transition: 1s;
 }
 
-.aboutme p{
+.aboutme p {
   color: ghostwhite;
 }
 
-.aboutme h2{
+.aboutme h2 {
   color: #F75C03;
 }
 
+/* ###About Me END### */
+
+
 
 /* ###Footer Wave### */
-*
-{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#wave{
+#wave {
   position: relative;
   width: 100%;
   height: 60vh;
   overflow: hidden;
 }
 
-section .wave{
+#wave .wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -420,7 +418,7 @@ section .wave{
   background-size: 1000px;
 }
 
-section .wave.wave1{
+#wave .wave.wave1 {
   animation: animatewave 30s linear infinite;
   z-index: 1000;
   opacity: 1;
@@ -428,7 +426,7 @@ section .wave.wave1{
   bottom: 0;
 }
 
-section .wave.wave2{
+#wave .wave.wave2 {
   animation: animatewave 15s linear infinite;
   z-index: 999;
   opacity: 0.5;
@@ -436,7 +434,7 @@ section .wave.wave2{
   bottom: 10px;
 }
 
-section .wave.wave3{
+#wave .wave.wave3 {
   animation: animatewave 10s linear infinite;
   z-index: 998;
   opacity: 0.2;
@@ -444,7 +442,7 @@ section .wave.wave3{
   bottom: 15px;
 }
 
-section .wave.wave4{
+#wave .wave.wave4 {
   animation: animatewave 25s linear infinite;
   z-index: 997;
   opacity: 0.7;
@@ -453,12 +451,14 @@ section .wave.wave4{
 }
 
 @keyframes animatewave {
-  0%{
-   background-position-x: 0;
-  } 
-  100%{
-   background-position-x: 1000px;
-  } 
- 
- }
- /* ###Footer Wave END### */
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+
+}
+
+/* ###Footer Wave END### */
