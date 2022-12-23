@@ -1,27 +1,10 @@
-Webseiten Ideen.
-https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw
 https://coolors.co/454e8d-d2c5c4-af1b3f-578ba3-f75c03
 
-https://coolors.co/034d63-840032-fffbfc-e6af2e-e88d67
 
-https://youtu.be/gI_X6ekJFus
-Unterstrich anpassen beim skrollen in der navbar für die navigation.
+Webseiten Ideen.
+https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw
+onepage mit seiten wie: https://anuraghazra.dev/ 
 
-
-About Me und Projekte etc bei anderen seite abgucken bevor programmierst.
-
-
-onepage mit seiten wie: https://anuraghazra.dev/ https://olaolu.dev/
-
-
-
-https://youtu.be/gI_X6ekJFus
-1. Übermich
-2. Tätigkeiten im Beruf auflisten, Grafik mit Logo. (Arbeitszeugniss comvistec), Tätigkeiten GUS siehe unten für ideen. im internet suchen was für tätigkeiten server admin usw haben. https://freefrontend.com/css-slideshows/ 
-3. Projekte https://opdra.de/, https://interface.com-vistec.de/ mit E-mail(Waldemar.as@htomail.hat eine) Waybackmaschine https://web.archive.org/web/20220201045249/https://interface.com-vistec.de/
-4. Kontakt Me
-
-Ideen:
 https://youtu.be/At6XyItIHsE
 https://youtu.be/huVJW23JHKQ
 https://youtu.be/zIGoqlw_tMQ?t=557 Projekte
@@ -29,10 +12,22 @@ https://youtu.be/KWVJTRWILjU
 https://youtu.be/izK5kG-xQX0
 
 
-Powershell GUS
+https://youtu.be/gI_X6ekJFus?t=79 Projekte maybe
+Unterstrich beim skrollen in der navbar für die navigation je nachdem wo man ist.
 
+1. Übermich
+2. Tätigkeiten im Beruf auflisten, Grafik mit Logo. (Arbeitszeugniss comvistec), Tätigkeiten GUS siehe unten für ideen. im internet suchen was für tätigkeiten server admin usw haben. https://freefrontend.com/css-slideshows/ 
+3. Projekte https://opdra.de/, https://interface.com-vistec.de/ mit E-mail(Waldemar.as@htomail.hat eine) Waybackmaschine https://web.archive.org/web/20220201045249/https://interface.com-vistec.de/, Powershell GUS
+4. Kontakt Me
+
+
+healthside ohne meine storys version
+
+-https://atec.rf.gd/?i=1 für projekte als hintergrund nur mit punkten/kreisen oder ein anderes muster
+
+
+____________________________________________________________________________
 restet api comvistec
-
 
 Verantwortung für den 2nd Level Support
 Selbstständiges Bearbeiten von Tickets
