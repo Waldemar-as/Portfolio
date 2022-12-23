@@ -73,7 +73,7 @@ svg {
 
 
 .headercenterdiv h1 {
-  /* transition: 1s; */
+  transition: 1s;
   animation: ease-out changeopacity;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -82,7 +82,7 @@ svg {
 
 
   margin: auto;
-  margin-bottom: 23vh;
+  margin-bottom: 25vh;
   z-index: 1;
   color: #d0d4d4;
   font-size: 1.5rem;
@@ -164,12 +164,12 @@ svg {
 }
 
 
-/* @media screen and (max-width: 2000px) {
+@media screen and (max-width: 2000px) {
   .headercenterdiv h1 {
     margin-bottom: 22vh;
   }
 
-} */
+}
 
 /* ###Header Landingpage### */
 
