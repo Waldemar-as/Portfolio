@@ -1,3 +1,11 @@
+/* Color var */
+:root {
+  --navbar-color: #578ba3; /* Define the variable */
+  --underline-and-h1-3: #F75C03;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -179,7 +187,7 @@ svg {
 /* ###Navbar### */
 
 #mainNavbar .navbar-brand {
-  color: #578ba3;
+  color: var(--navbar-color); 
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -191,7 +199,7 @@ svg {
 
 
 #mainNavbar .nav-link {
-  color: #578ba3;
+  color: var(--navbar-color); 
 }
 
 
@@ -231,7 +239,7 @@ svg {
 
 .selected {
   text-decoration: underline;
-  text-decoration-color: #F75C03;
+  text-decoration-color: var(--underline-and-h1-3); 
 }
 
 .navbar-light .navbar-toggler {
@@ -303,7 +311,7 @@ svg {
 
 
 .animated-icon2 span {
-  background: #F75C03;
+  background: var(--underline-and-h1-3); 
 }
 
 .animated-icon2 span:nth-child(1) {
@@ -387,7 +395,7 @@ svg {
 }
 
 .aboutme h2 {
-  color: #F75C03;
+  color: var(--underline-and-h1-3); 
 }
 
 /* ###About Me END### */
