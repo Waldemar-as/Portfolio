@@ -17,14 +17,14 @@ $(document).ready(function () {
 
 
 // Listen for scroll events on the document
-$(function () {
-  $(document).scroll(function () {
-    // Get the element with id "mainNavbar"
-    var $nav = $("#mainNavbar");
-    // Toggle the class "scrolled" based on whether the document has been scrolled beyond the height of the element
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  })
-})
+// $(function () {
+//   $(document).scroll(function () {
+//     // Get the element with id "mainNavbar"
+//     var $nav = $("#mainNavbar");
+//     // Toggle the class "scrolled" based on whether the document has been scrolled beyond the height of the element
+//     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+//   })
+// })
 
 
 // Listen for resize events on the window
