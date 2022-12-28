@@ -31,8 +31,10 @@ $(document).ready(function () {
 window.addEventListener('resize', function () {
   // Get the height of the element with id "anchor"
   var anchorHeight = $('#anchorJSAboutMe').height();
+  var anchorHeightProjects = $('#anchorJSProjects').height();
   // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
   $('.BackgroundSideWay').height(anchorHeight);
+  $('.BackgroundSideWay2').height(anchorHeightProjects);
 });
 
 
@@ -40,8 +42,10 @@ window.addEventListener('resize', function () {
 $(document).ready(function () {
   // Get the height of the element with id "anchor"
   var anchorHeight2 = $('#anchorJSAboutMe').height();
+  var anchorHeightProjects2 = $('#anchorJSProjects').height();
   // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
   $('.BackgroundSideWay').height(anchorHeight2);
+  $('.BackgroundSideWay2').height(anchorHeightProjects2);
 });
 
 

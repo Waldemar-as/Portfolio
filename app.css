@@ -411,7 +411,7 @@ h2 {
 #wave {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -585,3 +585,45 @@ div.card .card-header-primary {
 .card-header:first-child {
   border-radius: 0px;
 }
+
+.test{
+  /* background-image: url(img/blob.svg);
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###Projects### */
+.BackgroundSideWay2 {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  min-height: 520px;
+  background: linear-gradient(134deg, #6972B5 0%, #5A67AF);
+  transform: skewY(3deg);
+  z-index: -1;
+  pointer-events: none;
+  /* transition: 1s; */
+}
+
+
+
+/* .card-img, .card-img-top, .card-img-bottom {
+ max-height: 100px;
+} */
+
+/* .card-img, .card-img-top {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+} */
