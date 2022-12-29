@@ -375,22 +375,13 @@ svg {
 }
 
 
-.hJElzf {
-  margin: 100px auto;
-  font-weight: 900;
-  color: #6972B5;
-  text-align: center;
-  letter-spacing: 1px;
-}
 
-
-.aboutme {
+.sideways {
   padding-top: 50px;
   padding-bottom: 50px;
-  transition: 1s;
 }
 
-.aboutme p {
+#anchorJSAboutMe p {
   color: ghostwhite;
 }
 
@@ -584,12 +575,6 @@ div.card .card-header-primary {
 
 .card-header:first-child {
   border-radius: 0px;
-}
-
-.test{
-  /* background-image: url(img/blob.svg);
-  background-position: center;
-  background-repeat: no-repeat; */
 }
 
 

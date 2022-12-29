@@ -49,3 +49,16 @@ $(document).ready(function () {
 });
 
 
+// Press the toggle Button to hide the navbar
+document.addEventListener("click", function(event) {
+  if (window.innerWidth < 768) {
+  // Navitems
+  if (event.target.matches(".nav-link")) {
+    document.querySelector(".navbar-toggler").click();
+  }
+  // Homebutton
+  if (event.target.matches(".navbar-brand") && document.querySelector(".collapse").classList.contains("show")) {
+    document.querySelector(".navbar-toggler").click();
+  }
+}
+});
