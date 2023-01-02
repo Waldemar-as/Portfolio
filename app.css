@@ -394,10 +394,6 @@ h2 {
 
 
 /* ###Footer Wave### */
-* {
-  margin: 0;
-  padding: 0;
-}
 
 #wave {
   position: relative;
@@ -463,9 +459,11 @@ h2 {
 
 
 
-
-
-
+/* Where if Worked */
+.tab-pane img{
+max-height: 50px;
+}
+/* Where if Worked END*/
 
 
 

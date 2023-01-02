@@ -23,11 +23,11 @@ Unterstrich beim skrollen in der navbar für die navigation je nachdem wo man is
 
 healthside ohne meine storys version
 
--https://atec.rf.gd/?i=1 für projekte als hintergrund nur mit punkten/kreisen oder ein anderes muster
+
 
 
 ____________________________________________________________________________
-restet api comvistec
+
 
 Verantwortung für den 2nd Level Support
 Selbstständiges Bearbeiten von Tickets
