@@ -597,6 +597,8 @@ div.card .card-header-primary {
   transform: skewY(3deg);
   z-index: -1;
   pointer-events: none;
+
+  height: 512px;
   /* transition: 1s; */
 }
 

@@ -38,15 +38,17 @@ window.addEventListener('resize', function () {
 });
 
 
+
 // Loads when page is finished loading
-$(document).ready(function () {
+window.onload = function() {
   // Get the height of the element with id "anchor"
   var anchorHeight2 = $('#anchorJSAboutMe').height();
   var anchorHeightProjects2 = $('#anchorJSProjects').height();
   // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
   $('.BackgroundSideWay').height(anchorHeight2);
   $('.BackgroundSideWay2').height(anchorHeightProjects2);
-});
+};
+
 
 
 // Press the toggle Button to hide the navbar

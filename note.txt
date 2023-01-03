@@ -38,7 +38,7 @@ Verantwortung für den 2nd Level Support
 Selbstständiges Bearbeiten von Tickets
 Ansprechpartner für unsere Kunden
 Fehleranalyse und Übersetzung von Kundenanforderungen in Lösungsspezifikationen
-Eigenständige Realisierung von Lösungen in SQL
+Eigenständige Realisierung von Lösungen in SQL, Powershell
 Durchführung von Softwaretests
 Uns begeistert:
 Eine erfolgreich abgeschlossene Ausbildung im IT-Bereich
