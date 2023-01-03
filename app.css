@@ -612,3 +612,14 @@ div.card .card-header-primary {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 } */
+
+
+.card-deck .card {
+  transform: translateY(0); /* This moves the div back to its original position */
+  transition: transform 0.4s; /* This adds a transition effect when the position changes */
+}
+
+.card-deck .card:hover {
+  transform: translateY(-10px); /* This moves the div up slightly when you hover over it */
+  cursor: pointer;
+}
