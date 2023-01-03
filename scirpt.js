@@ -74,16 +74,57 @@ const CardHealthRules = document.getElementById('CardHealthRules');
 const CardPortfolio = document.getElementById('CardPortfolio');
 const CardNatours = document.getElementById('CardNatours');
 
-
 // Add click event listeners to the cards
 CardHealthRules.addEventListener('click', function() {
-  window.location = 'https://10healthrules.netlify.app/index.html';
+  window.open('https://10healthrules.netlify.app/index.html', '_blank');
 });
 CardPortfolio.addEventListener('click', function() {
   window.location = 'index.html#Landingpage'
 });
 CardNatours.addEventListener('click', function() {
-  window.location = 'Not Published Yet';
+  window.open('Not Published yet', '_blank');
+});
+
+
+
+
+
+// changes the navbar underline highlight depending on the position of the users view.
+const navbarBrand = document.querySelector('.navbar-brand');
+const aboutMeAnchor = document.querySelector('#AboutMeAnchor');
+const workAnchor = document.querySelector('#WorkAnchor');
+const projectsAnchor = document.querySelector('#ProjectsAnchor');
+
+window.addEventListener('scroll', () => {
+  const currentPosition = window.scrollY;
+
+  var offsetnumber = 30;
+
+  if (currentPosition > aboutMeAnchor.offsetTop -offsetnumber) {
+    navbarBrand.classList.remove('selected');
+  } else {
+    navbarBrand.classList.add('selected');
+  }
+
+  if (currentPosition >= aboutMeAnchor.offsetTop -offsetnumber & currentPosition < workAnchor.offsetTop -offsetnumber) {
+    $('.nav-link[href="#AboutMeAnchor"]').addClass('selected');
+  } else {
+    $('.nav-link[href="#AboutMeAnchor"]').removeClass('selected');
+  }
+
+  if (currentPosition >= workAnchor.offsetTop -offsetnumber & currentPosition < projectsAnchor.offsetTop -offsetnumber) {
+    $('.nav-link[href="#WorkAnchor"]').addClass('selected');
+  } else {
+    $('.nav-link[href="#WorkAnchor"]').removeClass('selected');
+  }
+
+  if (currentPosition >= projectsAnchor.offsetTop -offsetnumber) {
+    $('.nav-link[href="#ProjectsAnchor"]').addClass('selected');
+  } else {
+    $('.nav-link[href="#ProjectsAnchor"]').removeClass('selected');
+  }
+
+
 });
 
 
@@ -94,37 +135,3 @@ CardNatours.addEventListener('click', function() {
 
 
 
-
-const navbarLinks = document.querySelectorAll('.nav-link');
-const navbarBrand = document.querySelector('.navbar-brand');
-
-function updateNavbar() {
-  // Get the current scroll position
-  const scrollPos = window.scrollY;
-
-  // Check if the scroll position is above the "About Me" section
-  if (scrollPos < document.querySelector('#AboutMeAnchor').offsetTop) {
-    // If it is, set the "selected" class on the navbar-brand element
-    navbarBrand.classList.add('selected');
-
-    // Remove the "selected" class from all nav-link elements
-    navbarLinks.forEach(link => link.classList.remove('selected'));
-  } else {
-    // If it isn't, remove the "selected" class from the navbar-brand element
-    navbarBrand.classList.remove('selected');
-
-    // Check which nav-link element should have the "selected" class
-    navbarLinks.forEach(link => {
-      // If the scroll position is within the bounds of the section corresponding to the nav-link element, set the "selected" class on that element
-      if (scrollPos >= document.querySelector(link.getAttribute('href')).offsetTop - 25 && scrollPos < document.querySelector(link.getAttribute('href')).offsetTop + document.querySelector(link.getAttribute('href')).offsetHeight - 25) {
-        link.classList.add('selected');
-      } else {
-        // If it isn't, remove the "selected" class from that element
-        link.classList.remove('selected');
-      }
-    });
-  }
-}
-
-// Add an event listener to the scroll event
-window.addEventListener('scroll', updateNavbar);
