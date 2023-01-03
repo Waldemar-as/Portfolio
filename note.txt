@@ -17,13 +17,11 @@ https://youtu.be/KWVJTRWILjU
 https://youtu.be/izK5kG-xQX0
 
 
-https://youtu.be/gI_X6ekJFus?t=79 Projekte maybe
-Unterstrich beim skrollen in der navbar für die navigation je nachdem wo man ist.
-
-1. Übermich
-2. Tätigkeiten im Beruf auflisten, Grafik mit Logo. (Arbeitszeugniss comvistec), Tätigkeiten GUS siehe unten für ideen. im internet suchen was für tätigkeiten server admin usw haben. https://freefrontend.com/css-slideshows/ 
-3. Projekte https://opdra.de/, https://interface.com-vistec.de/ mit E-mail(Waldemar.as@htomail.hat eine) Waybackmaschine https://web.archive.org/web/20220201045249/https://interface.com-vistec.de/, Powershell GUS
-4. Kontakt Me
+Todo: 
+Alles durchlesen. 
+Code durchlesen und anpassen.
+Footer maybe https://www.youtube.com/watch?v=UpkEANWC2Ms&t=471s
+Favicon
 
 
 healthside ohne meine storys version
