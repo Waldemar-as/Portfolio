@@ -643,7 +643,7 @@ footer  a{
   z-index: 1000;
   opacity: 1;
   animation-delay: 0s;
-  bottom: 0;
+  top: 25px;
 }
 
 #wave .wave.wave2 {
@@ -651,7 +651,7 @@ footer  a{
   z-index: 999;
   opacity: 0.5;
   animation-delay: -7s;
-  bottom: 10px;
+  top: 10px;
 }
 
 #wave .wave.wave3 {
@@ -659,7 +659,7 @@ footer  a{
   z-index: 998;
   opacity: 0.2;
   animation-delay: -2s;
-  bottom: 15px;
+  top: 5px;
 }
 
 #wave .wave.wave4 {
@@ -667,7 +667,6 @@ footer  a{
   z-index: 997;
   opacity: 0.7;
   animation-delay: -2s;
-  bottom: 20px;
 }
 
 @keyframes animatewave {
