@@ -31,6 +31,12 @@ body {
 }
 
 
+a:hover{ 
+  color: var(--underline-and-h1-3);
+  text-decoration: none;
+}
+
+
 /* ###Header Landingpage### */
 .headerbackground {
   background-image: url(img/BlueWhite3.png);
@@ -598,10 +604,7 @@ footer  a{
   transition: 0.5s;
 }
 
-footer a:hover{ 
-  color: var(--underline-and-h1-3);
-  text-decoration: none;
-}
+
 
 .footer_bottom{
   display: flex;
