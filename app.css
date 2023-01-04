@@ -393,81 +393,12 @@ h2 {
 
 
 
-/* ###Footer Wave### */
-
-#wave {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-#wave .wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(img/wave.png);
-  background-size: 1000px;
-}
-
-#wave .wave.wave1 {
-  animation: animatewave 30s linear infinite;
-  z-index: 1000;
-  opacity: 1;
-  animation-delay: 0s;
-  bottom: 0;
-}
-
-#wave .wave.wave2 {
-  animation: animatewave 15s linear infinite;
-  z-index: 999;
-  opacity: 0.5;
-  animation-delay: -7s;
-  bottom: 10px;
-}
-
-#wave .wave.wave3 {
-  animation: animatewave 10s linear infinite;
-  z-index: 998;
-  opacity: 0.2;
-  animation-delay: -2s;
-  bottom: 15px;
-}
-
-#wave .wave.wave4 {
-  animation: animatewave 25s linear infinite;
-  z-index: 997;
-  opacity: 0.7;
-  animation-delay: -2s;
-  bottom: 20px;
-}
-
-@keyframes animatewave {
-  0% {
-    background-position-x: 0;
-  }
-
-  100% {
-    background-position-x: 1000px;
-  }
-
-}
-
-/* ###Footer Wave END### */
-
 
 
 /* Where if Worked */
 .tab-pane img{
 max-height: 50px;
 }
-/* Where if Worked END*/
-
-
-
-
 
 div.card {
   border: 0;
@@ -574,7 +505,7 @@ div.card .card-header-primary {
 .card-header:first-child {
   border-radius: 0px;
 }
-
+/* Where if Worked END*/
 
 
 
@@ -623,3 +554,140 @@ div.card .card-header-primary {
   transform: translateY(-10px); /* This moves the div up slightly when you hover over it */
   cursor: pointer;
 }
+/* ###Projects END ### */
+
+
+
+/* ###footer###*/
+
+footer{
+  position: relative;
+  width: 100%;
+  /* background-color: #5A67AF; */
+  min-height: 100px;
+  /* padding: 20px 50px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: ghostwhite;
+}
+
+footer .social_icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+footer .social_icon li a{ 
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer  a{ 
+  color: ghostwhite;
+  transition: 0.5s;
+}
+
+footer a:hover{ 
+  color: var(--underline-and-h1-3);
+  text-decoration: none;
+}
+
+.footer_bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: ghostwhite;
+  background-color: #6972B5;
+  width: 100%;
+}
+/* footer end */
+
+
+
+/* ###Footer Wave### */
+
+#wave {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+#wave .wave {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background: url(img/wave.png);
+  background-size: 1000px;
+}
+
+#wave .wave.wave1 {
+  animation: animatewave 10s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+#wave .wave.wave2 {
+  animation: animatewave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -7s;
+  bottom: 10px;
+}
+
+#wave .wave.wave3 {
+  animation: animatewave 5s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+#wave .wave.wave4 {
+  animation: animatewave2 15s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 20px;
+}
+
+@keyframes animatewave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+
+} 
+
+
+@keyframes animatewave2 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+
+} 
+
+/* ###Footer Wave END### */
