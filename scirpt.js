@@ -98,7 +98,7 @@ const projectsAnchor = document.querySelector('#ProjectsAnchor');
 window.addEventListener('scroll', () => {
   const currentPosition = window.scrollY;
 
-  var offsetnumber = 30;
+  var offsetnumber = 150;
 
   if (currentPosition > aboutMeAnchor.offsetTop -offsetnumber) {
     navbarBrand.classList.remove('selected');
