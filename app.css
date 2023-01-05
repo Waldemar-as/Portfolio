@@ -619,6 +619,8 @@ footer  a{
 
 .footer_bottom p{
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* footer end */
