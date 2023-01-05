@@ -618,7 +618,7 @@ footer  a{
 
 
 .footer_bottom p{
-  font-size: min(max(10px, 1.5vw), 1.5vh);
+  font-size: min(max(15px, 1.5vw), 1.5vh);
   /* font-size: max(10px, 1.5vw); */
 }
 
