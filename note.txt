@@ -21,3 +21,5 @@ Favicon
 
 healthside ohne meine storys version?
 
+  --lighter: #6972B5;
+  --lighter: #5A67AF;

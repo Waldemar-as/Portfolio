@@ -1,11 +1,12 @@
-/* Color var */
+/* Color variables */
 :root {
   --navbar-color: #578ba3;
   /* Define the variable */
   /* --underline-and-h1-3: #F75C03; */
   --underline-and-h1-3: #FD8B49;
+  --lighter: #6972B5;
+  --darker: #5A67AF;
 }
-
 
 
 html {
@@ -40,13 +41,13 @@ a:hover {
 
 
 /* overall container maxwidth */
-@media (min-width: 1200px) {
+@media (min-width: 2000px) {
   .container,
   .container-sm,
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1140px;
+    max-width: 1440px;
   }
 }
 
@@ -142,6 +143,7 @@ svg {
   margin: auto;
   /* margin-bottom: 15vh;  */
   z-index: 1;
+  background-color: var(--lighter);
 }
 
 
@@ -398,7 +400,7 @@ svg {
   left: 0px;
   width: 100%;
   /* min-height: 520px; */
-  background: linear-gradient(134deg, #6972B5 0%, #5A67AF);
+  background: linear-gradient(134deg, var(--lighter) 0%, var(--darker));
   transform: skewY(-3deg);
   z-index: -1;
   pointer-events: none;
@@ -467,7 +469,7 @@ div.card .card-header {
 }
 
 div.card .card-header-primary {
-  background: linear-gradient(60deg, #5A67AF, #6972B5);
+  background: linear-gradient(60deg, var(--darker), var(--lighter));
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(212, 207, 212, 0.6);
 }
 
@@ -557,7 +559,7 @@ div.card .card-header-primary {
   left: 0px;
   width: 100%;
   min-height: 520px;
-  background: linear-gradient(134deg, #6972B5 0%, #5A67AF);
+  background: linear-gradient(134deg, var(--lighter) 0%, var(--darker));
   transform: skewY(3deg);
   z-index: -1;
   pointer-events: none;
@@ -600,7 +602,7 @@ div.card .card-header-primary {
 footer {
   position: relative;
   width: 100%;
-  /* background-color: #5A67AF; */
+  /* background-color: var(--darker); */
   min-height: 100px;
   /* padding: 20px 50px; */
 
@@ -643,7 +645,7 @@ footer a {
   align-items: center;
   flex-direction: column;
   color: ghostwhite;
-  background-color: #6972B5;
+  background-color: var(--lighter);
   width: 100%;
 }
 
