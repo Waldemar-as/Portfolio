@@ -39,6 +39,19 @@ a:hover {
 }
 
 
+/* overall container maxwidth */
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+
+
+
 /* ###Header Landingpage### */
 .headerbackground {
   background-image: url(img/BlueWhite3.png);
@@ -201,16 +214,7 @@ svg {
   }
 }
 
-/* overall container maxwidth */
-@media (min-width: 1200px) {
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg,
-  .container-xl {
-    max-width: 1240px;
-  }
-}
+
 
 
 #mainNavbar .navbar-brand {
