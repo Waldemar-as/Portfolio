@@ -615,6 +615,12 @@ footer  a{
   background-color: #6972B5;
   width: 100%;
 }
+
+
+.footer_bottom p{
+  white-space: nowrap;
+}
+
 /* footer end */
 
 
