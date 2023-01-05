@@ -1,11 +1,11 @@
 /* Color variables */
 :root {
-  --navbar-color: #578ba3;
+  --navbar-color: #011526;
   /* Define the variable */
   /* --underline-and-h1-3: #F75C03; */
-  --underline-and-h1-3: #FD8B49;
-  --lighter: #6972B5;
-  --darker: #5A67AF;
+  --underline-and-h1-3: #FD7E35;
+  --lighter: #5d7797;
+  --darker: #4f6888;
 }
 
 
@@ -55,7 +55,7 @@ a:hover {
 
 /* ###Header Landingpage### */
 .headerbackground {
-  background-image: url(img/BlueWhite3.png);
+  background-image: url(img/HeaderBackground.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,6 +69,8 @@ video {
   width: 100%;
   height: 100%;
 }
+
+
 
 .clipped-video {
   -webkit-clip-path: url(#mask-overlay);
@@ -568,6 +570,26 @@ div.card .card-header-primary {
   /* transition: 1s; */
 }
 
+
+/* maxwidth normal size */
+.card-deck .card {
+  max-width: 350px;
+}
+
+/* maxwidth when ultrawide */
+@media (min-width: 2000px) {
+  .card-deck .card {
+    max-width: 450px;
+  }
+}
+
+
+/* maxwidth when phone*/
+@media (max-width: 1000px) {
+  .card-deck .card {
+    max-width: 650px;
+  }
+}
 
 
 /* .card-img, .card-img-top, .card-img-bottom {

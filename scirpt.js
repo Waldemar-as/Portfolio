@@ -27,26 +27,26 @@ $(document).ready(function () {
 // })
 
 
-// Listen for resize events on the window
-window.addEventListener('resize', function () {
-  // Get the height of the element with id "anchor"
-  var anchorHeight = $('#anchorJSAboutMe').height();
-  var anchorHeightProjects = $('#anchorJSProjects').height();
-  // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
-  $('.BackgroundSideWay').height(anchorHeight);
-  $('.BackgroundSideWay2').height(anchorHeightProjects);
-});
-
-
-
-// Loads when page is finished loading
-window.onload = function() {
+function adjust_sideway_background(){
   // Get the height of the element with id "anchor"
   var anchorHeight2 = $('#anchorJSAboutMe').height();
   var anchorHeightProjects2 = $('#anchorJSProjects').height();
   // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
   $('.BackgroundSideWay').height(anchorHeight2);
   $('.BackgroundSideWay2').height(anchorHeightProjects2);
+}
+
+
+// Listen for resize events on the window
+window.addEventListener('resize', function () {
+  adjust_sideway_background();
+});
+
+
+
+// Loads when page is finished loading
+window.onload = function() {
+  adjust_sideway_background();
 };
 
 
@@ -130,8 +130,13 @@ window.addEventListener('scroll', () => {
 
 
 
-
-
+// show more button
+$(document).ready(function() {
+  $("#toggleButton").click(function() {
+    $("#targetDiv").toggle();
+    adjust_sideway_background();
+  });
+});
 
 
 
