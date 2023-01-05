@@ -618,9 +618,8 @@ footer  a{
 
 
 .footer_bottom p{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: min(max(10px, 1.5vw), 1.5vh);
+  /* font-size: max(10px, 1.5vw); */
 }
 
 /* footer end */
