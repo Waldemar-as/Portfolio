@@ -1,8 +1,9 @@
+/* ###Overall CSS### */
+
 /* Color variables */
 :root {
   --navbar-color: #011526;
   /* Define the variable */
-  /* --underline-and-h1-3: #F75C03; */
   --underline-and-h1-3: #FD7121;
   --lighter: #5d7797;
   --darker: #4f6888;
@@ -55,159 +56,10 @@ a:hover {
 }
 
 
-
-/* ###Header Landingpage### */
-.headerbackground {
-  background-image: url(img/HeaderBackground.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-
-  /* enables to click through the div*/
-  pointer-events: none;
-}
-
-video {
-  width: 100%;
-  height: 100%;
-}
+/* ###Overall CSS END### */
 
 
 
-.clipped-video {
-  -webkit-clip-path: url(#mask-overlay);
-  clip-path: url(#mask-overlay);
-}
-
-svg {
-  font-size: min(max(0px, 11vw), 200vh);
-  /* Wichtig, Updated das svg damit es in immer der Mitte bleibt. "dummy update"*/
-  /* mindestens 70px maximal 18vh, skaliert mit 11vw*/
-
-  /* font-weight: bold; */
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* transition: 0.1s font-size; */
-}
-
-
-.headercenterdiv {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-
-
-.headercenterdiv h1 {
-  transition: 1s;
-  animation: ease-out changeopacity;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 1.0s;
-  opacity: 0;
-
-
-  margin: auto;
-  margin-bottom: 25vh;
-  z-index: 1;
-  color: #e1e6e6;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-
-/* https://www.w3schools.com/css/css3_animations.asp */
-/* text {
-
-  opacity: 1;
-  animation: ease-out textgrowth;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-} */
-
-.myimage {
-  /* animation: ease-out changeopacity;
-  animation-duration: 1.0s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-
-  opacity: 0; */
-  border-radius: 50%;
-  max-height: 25vh;
-  height: auto;
-
-  margin: auto;
-  /* margin-bottom: 15vh;  */
-  z-index: 1;
-  background-color: var(--lighter);
-}
-
-
-
-@keyframes slide-in {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  to {
-    transform: translateX(+100%);
-    opacity: 0;
-  }
-}
-
-/* @keyframes textgrowth {
-  0% {
-    font-size: 1vw;
-  }
-
-  100% {
-    font-size: min(max(70px, 11vw), 17vh);
-  }
-} */
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translatey(+100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translatey(0);
-    opacity: 1;
-  }
-}
-
-
-@media screen and (max-width: 767px) {
-  .headercenterdiv h1 {
-    margin-bottom: 22vh;
-  }
-
-}
-
-/* ###Header Landingpage### */
 
 
 
@@ -222,8 +74,6 @@ svg {
 }
 
 
-
-
 #mainNavbar .navbar-brand {
   color: var(--navbar-color);
   font-size: 1.5rem;
@@ -235,11 +85,9 @@ svg {
 }
 
 
-
 #mainNavbar .nav-link {
   color: var(--navbar-color);
 }
-
 
 .navbar {
   transition: 0.3s;
@@ -262,7 +110,6 @@ svg {
 }
 
 .fixed-top {
-  /* position: fixed; */
   position: fixed;
   top: 0;
   right: 0;
@@ -312,7 +159,8 @@ svg {
 }
 
 
-/* Hamurger Icon https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/*/
+/* Hamurger Icon */
+
 .animated-icon2 {
   width: 30px;
   height: 20px;
@@ -392,7 +240,165 @@ svg {
 }
 
 /* Hamurger END*/
+
 /* ###Navbar END### */
+
+
+
+
+
+
+/* ###Header Landingpage### */
+.headerbackground {
+  background-image: url(img/HeaderBackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  /* enables to click through the div*/
+  pointer-events: none;
+}
+
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+
+.clipped-video {
+  -webkit-clip-path: url(#mask-overlay);
+  clip-path: url(#mask-overlay);
+}
+
+svg {
+  /* Wichtig, Updated das svg damit es in immer der Mitte bleibt. "dummy update"*/
+  font-size: min(max(0px, 11vw), 200vh);
+
+  /* font-weight: bold; */
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* transition: 0.1s font-size; */
+}
+
+
+.headercenterdiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+
+.headercenterdiv h1 {
+  transition: 1s;
+  animation: ease-out changeopacity;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.0s;
+  opacity: 0;
+
+
+  margin: auto;
+  margin-bottom: 25vh;
+  z-index: 1;
+  color: #e1e6e6;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+/* https://www.w3schools.com/css/css3_animations.asp */
+/* text {
+
+  opacity: 1;
+  animation: ease-out textgrowth;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+} */
+
+.myimage {
+  /* animation: ease-out changeopacity;
+  animation-duration: 1.0s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+
+  opacity: 0; */
+  border-radius: 50%;
+  max-height: 25vh;
+  height: auto;
+
+  margin: auto;
+  /* margin-bottom: 15vh;  */
+  z-index: 1;
+  background-color: var(--lighter);
+}
+
+
+
+/* @keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(+100%);
+    opacity: 0;
+  }
+} */
+
+/* @keyframes textgrowth {
+  0% {
+    font-size: 1vw;
+  }
+
+  100% {
+    font-size: min(max(70px, 11vw), 17vh);
+  }
+} */
+
+/* @keyframes slideInFromBottom {
+  0% {
+    transform: translatey(+100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+} */
+
+
+@media screen and (max-width: 767px) {
+  .headercenterdiv h1 {
+    margin-bottom: 22vh;
+  }
+
+}
+
+/* ###Header Landingpage### */
 
 
 
@@ -404,14 +410,13 @@ svg {
   position: absolute;
   left: 0px;
   width: 100%;
-  /* min-height: 520px; */
+  /* min-height: 520px; Will be replaced my javascript, just to be sure when the skript fails */
   background: linear-gradient(134deg, var(--lighter) 0%, var(--darker));
   transform: skewY(-3deg);
   z-index: -1;
   pointer-events: none;
   /* transition: 1s; */
 }
-
 
 
 .sideways {
@@ -428,6 +433,7 @@ h2 {
 }
 
 /* ###About Me END### */
+
 
 
 
@@ -478,10 +484,6 @@ div.card .card-header-primary {
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(212, 207, 212, 0.6);
 }
 
-
-.card-nav-tabs .card-header {
-  margin-top: -30px !important;
-}
 
 .card .card-header .nav-tabs {
   padding: 0;
@@ -545,7 +547,7 @@ div.card .card-header-primary {
   border-radius: 0px;
 }
 
-/* Where if Worked END*/
+/* ###Where if Worked END###*/
 
 
 
@@ -568,8 +570,6 @@ div.card .card-header-primary {
   transform: skewY(3deg);
   z-index: -1;
   pointer-events: none;
-
-  height: 512px;
   /* transition: 1s; */
 }
 
@@ -591,14 +591,14 @@ div.card .card-header-primary {
 
 
 
-/* ###footer###*/
+
+
+/* ###Footer###*/
 
 footer {
   position: relative;
   width: 100%;
-  /* background-color: var(--darker); */
   min-height: 100px;
-  /* padding: 20px 50px; */
 
   display: flex;
   justify-content: center;
@@ -632,7 +632,6 @@ footer a {
 }
 
 
-
 .footer_bottom {
   display: flex;
   justify-content: center;
@@ -646,10 +645,8 @@ footer a {
 
 .footer_bottom p {
   font-size: min(max(15px, 1.5vw), 1.5vh);
-  /* font-size: max(10px, 1.5vw); */
 }
 
-/* footer end */
 
 
 
@@ -727,3 +724,5 @@ footer a {
 }
 
 /* ###Footer Wave END### */
+
+/* ###Footer END### */

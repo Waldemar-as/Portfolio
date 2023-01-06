@@ -1,4 +1,20 @@
-//Navbar Toggle Button animation
+// ###Functions###
+
+// adjusts the background of work and projects
+function adjust_sideway_background() {
+  // Get the height of the element with id "anchor"
+  var anchorHeight2 = $('#anchorJSAboutMe').height();
+  var anchorHeightProjects2 = $('#anchorJSProjects').height();
+  // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
+  $('.BackgroundSideWay').height(anchorHeight2);
+  $('.BackgroundSideWay2').height(anchorHeightProjects2);
+}
+
+
+// ###Functionos END###
+
+
+//Animates the navbar toggle button
 $(document).ready(function () {
 
   $('.first-button').on('click', function () {
@@ -16,6 +32,9 @@ $(document).ready(function () {
 });
 
 
+
+
+//Show navbar when scrolled
 // Listen for scroll events on the document
 // $(function () {
 //   $(document).scroll(function () {
@@ -27,14 +46,6 @@ $(document).ready(function () {
 // })
 
 
-function adjust_sideway_background(){
-  // Get the height of the element with id "anchor"
-  var anchorHeight2 = $('#anchorJSAboutMe').height();
-  var anchorHeightProjects2 = $('#anchorJSProjects').height();
-  // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
-  $('.BackgroundSideWay').height(anchorHeight2);
-  $('.BackgroundSideWay2').height(anchorHeightProjects2);
-}
 
 
 // Listen for resize events on the window
@@ -45,13 +56,13 @@ window.addEventListener('resize', function () {
 
 
 // Loads when page is finished loading
-window.onload = function() {
+window.onload = function () {
   adjust_sideway_background();
 };
 
 
 
-// Press the toggle Button to hide the navbar
+// Presses the toggle button to hide the navbar after an nav-link or nav-brand was pressed
 document.addEventListener("click", function (event) {
   if (window.innerWidth < 768) {
     // Navitems
@@ -69,19 +80,19 @@ document.addEventListener("click", function (event) {
 
 
 
-// Acts a an a href when clicking a card div the projects section
+// Acts as an ahref when clicking a card div in the projects section
 const CardHealthRules = document.getElementById('CardHealthRules');
 const CardPortfolio = document.getElementById('CardPortfolio');
 const CardNatours = document.getElementById('CardNatours');
 
 // Add click event listeners to the cards
-CardHealthRules.addEventListener('click', function() {
+CardHealthRules.addEventListener('click', function () {
   window.open('https://10healthrules.netlify.app/index.html', '_blank');
 });
-CardPortfolio.addEventListener('click', function() {
+CardPortfolio.addEventListener('click', function () {
   window.location = 'index.html#Landingpage'
 });
-CardNatours.addEventListener('click', function() {
+CardNatours.addEventListener('click', function () {
   window.open('Not Published yet', '_blank');
 });
 
@@ -96,34 +107,34 @@ const workAnchor = document.querySelector('#WorkAnchor');
 const projectsAnchor = document.querySelector('#ProjectsAnchor');
 
 window.addEventListener('scroll', () => {
+
   const currentPosition = window.scrollY;
 
   var offsetnumber = 150;
 
-  if (currentPosition > aboutMeAnchor.offsetTop -offsetnumber) {
+  if (currentPosition > aboutMeAnchor.offsetTop - offsetnumber) {
     navbarBrand.classList.remove('selected');
   } else {
     navbarBrand.classList.add('selected');
   }
 
-  if (currentPosition >= aboutMeAnchor.offsetTop -offsetnumber & currentPosition < workAnchor.offsetTop -offsetnumber) {
+  if (currentPosition >= aboutMeAnchor.offsetTop - offsetnumber & currentPosition < workAnchor.offsetTop - offsetnumber) {
     $('.nav-link[href="#AboutMeAnchor"]').addClass('selected');
   } else {
     $('.nav-link[href="#AboutMeAnchor"]').removeClass('selected');
   }
 
-  if (currentPosition >= workAnchor.offsetTop -offsetnumber & currentPosition < projectsAnchor.offsetTop -offsetnumber) {
+  if (currentPosition >= workAnchor.offsetTop - offsetnumber & currentPosition < projectsAnchor.offsetTop - offsetnumber) {
     $('.nav-link[href="#WorkAnchor"]').addClass('selected');
   } else {
     $('.nav-link[href="#WorkAnchor"]').removeClass('selected');
   }
 
-  if (currentPosition >= projectsAnchor.offsetTop -offsetnumber) {
+  if (currentPosition >= projectsAnchor.offsetTop - offsetnumber) {
     $('.nav-link[href="#ProjectsAnchor"]').addClass('selected');
   } else {
     $('.nav-link[href="#ProjectsAnchor"]').removeClass('selected');
   }
-
 
 });
 
@@ -131,8 +142,8 @@ window.addEventListener('scroll', () => {
 
 
 // show more button
-$(document).ready(function() {
-  $("#toggleButton").click(function() {
+$(document).ready(function () {
+  $("#toggleButton").click(function () {
     $("#targetDiv").toggle();
     adjust_sideway_background();
   });
