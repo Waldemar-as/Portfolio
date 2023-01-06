@@ -3,11 +3,14 @@
   --navbar-color: #011526;
   /* Define the variable */
   /* --underline-and-h1-3: #F75C03; */
-  --underline-and-h1-3: #FD7E35;
+  --underline-and-h1-3: #FD7121;
   --lighter: #5d7797;
   --darker: #4f6888;
 }
 
+.flex {
+  display: flex;
+}
 
 html {
   scroll-behavior: smooth;
@@ -571,45 +574,14 @@ div.card .card-header-primary {
 }
 
 
-/* maxwidth normal size */
-.card-deck .card {
-  max-width: 350px;
-}
-
-/* maxwidth when ultrawide */
-@media (min-width: 2000px) {
-  .card-deck .card {
-    max-width: 450px;
-  }
-}
-
-
-/* maxwidth when phone*/
-@media (max-width: 1000px) {
-  .card-deck .card {
-    max-width: 650px;
-  }
-}
-
-
-/* .card-img, .card-img-top, .card-img-bottom {
- max-height: 100px;
-} */
-
-/* .card-img, .card-img-top {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-} */
-
-
-.card-deck .card {
+.row .card {
   transform: translateY(0);
   /* This moves the div back to its original position */
   transition: transform 0.4s;
   /* This adds a transition effect when the position changes */
 }
 
-.card-deck .card:hover {
+.row .card:hover {
   transform: translateY(-10px);
   /* This moves the div up slightly when you hover over it */
   cursor: pointer;
