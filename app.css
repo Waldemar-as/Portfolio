@@ -270,7 +270,7 @@ video {
 .clipped-video {
   -webkit-clip-path: url(#mask-overlay);
   clip-path: url(#mask-overlay);
-  background-color: ghostwhite;
+  background-color: ghostwhite;  position:fixed;
 
 }
 
