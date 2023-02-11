@@ -277,6 +277,7 @@ video {
 video{
   background-color: white; 
   position:fixed;
+  playsinline
 }
 
 svg {
