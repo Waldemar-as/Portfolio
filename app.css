@@ -274,6 +274,10 @@ video {
 
 }
 
+video{
+  background-color: white;
+}
+
 svg {
   /* Wichtig, Updated das svg damit es in immer der Mitte bleibt. "dummy update"*/
   font-size: min(max(0px, 11vw), 200vh);
