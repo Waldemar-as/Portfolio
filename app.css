@@ -275,7 +275,8 @@ video {
 }
 
 video{
-  background-color: white;
+  background-color: white; 
+  position:fixed;
 }
 
 svg {
