@@ -270,7 +270,7 @@ video {
 .clipped-video {
   -webkit-clip-path: url(#mask-overlay);
   clip-path: url(#mask-overlay);
-  background-color: white;
+  background-color: white; /* Just in case the video is not loading */
 }
 
 svg {
