@@ -641,6 +641,7 @@ footer a {
   color: ghostwhite;
   background-color: var(--lighter);
   width: 100%;
+   margin-top: -5px; /*Damit beim scrollen auf dem handy keine lücke entsteht */
 }
 
 
