@@ -1,6 +1,6 @@
 // ###Functions###
 
-// adjusts the background of work and projects
+// adjusts the sidways background of work and projects
 function adjust_sideway_background() {
   // Get the height of the element with id "anchor"
   var anchorHeight2 = $('#anchorJSAboutMe').height();
@@ -8,6 +8,12 @@ function adjust_sideway_background() {
   // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
   $('.BackgroundSideWay').height(anchorHeight2);
   $('.BackgroundSideWay2').height(anchorHeightProjects2);
+}
+
+function place_welcome_below_img(){
+  const image = document.querySelector(".myimage");
+  const welcomeHeading = document.querySelector("#Welcome h1");
+  welcomeHeading.style.paddingTop = "450px";
 }
 
 
@@ -58,6 +64,7 @@ window.addEventListener('resize', function () {
 // Loads when page is finished loading
 document.addEventListener("DOMContentLoaded", function() {
   adjust_sideway_background();
+  place_welcome_below_img();
 });
 
 
@@ -80,7 +87,7 @@ document.addEventListener("click", function (event) {
 
 
 
-// Acts as an ahref when clicking a card div in the projects section
+// acts as an ahref when clicking a card div in the projects section
 const CardHealthRules = document.getElementById('CardHealthRules');
 const CardPortfolio = document.getElementById('CardPortfolio');
 const CardNatours = document.getElementById('CardNatours');
@@ -150,10 +157,3 @@ $(document).ready(function () {
 });
 
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  const image = document.querySelector(".myimage");
-  const welcomeHeading = document.querySelector("#Welcome h1");
-
-  welcomeHeading.style.paddingTop = "450px";
-});
