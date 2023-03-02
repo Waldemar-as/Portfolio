@@ -309,7 +309,7 @@ svg {
 
 
   margin: auto;
-  margin-bottom: 25vh;
+  /* margin-bottom: 25vh; */
   z-index: 1;
   color: #e1e6e6;
   font-size: 1.5rem;
@@ -392,12 +392,12 @@ svg {
 } */
 
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .headercenterdiv h1 {
     margin-bottom: 22vh;
   }
 
-}
+} */
 
 /* ###Header Landingpage### */
 

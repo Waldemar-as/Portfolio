@@ -56,9 +56,9 @@ window.addEventListener('resize', function () {
 
 
 // Loads when page is finished loading
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function() {
   adjust_sideway_background();
-};
+});
 
 
 
@@ -151,3 +151,9 @@ $(document).ready(function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const image = document.querySelector(".myimage");
+  const welcomeHeading = document.querySelector("#Welcome h1");
+
+  welcomeHeading.style.paddingTop = "450px";
+});
