@@ -62,10 +62,10 @@ window.addEventListener('resize', function () {
 
 
 // Loads when page is finished loading
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function () {
   adjust_sideway_background();
   place_welcome_below_img();
-});
+};
 
 
 
