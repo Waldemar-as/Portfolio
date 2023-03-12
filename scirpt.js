@@ -59,12 +59,12 @@ window.addEventListener('resize', function () {
   adjust_sideway_background();
 });
 
-
+place_welcome_below_img();
 
 // Loads when page is finished loading
 window.onload = function () {
   adjust_sideway_background();
-  place_welcome_below_img();
+
 };
 
 
