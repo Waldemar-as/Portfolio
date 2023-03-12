@@ -59,11 +59,15 @@ window.addEventListener('resize', function () {
   adjust_sideway_background();
 });
 
+
+
+// Executes the code right away, does not have to wait untill the page is done loading.
 place_welcome_below_img();
+adjust_sideway_background();
+
 
 // Loads when page is finished loading
 window.onload = function () {
-  adjust_sideway_background();
 
 };
 
