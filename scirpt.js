@@ -104,7 +104,7 @@ CardPortfolio.addEventListener('click', function () {
   window.location = 'index.html#Landingpage'
 });
 CardNatours.addEventListener('click', function () {
-  window.open('Not Published yet', '_blank');
+  window.open('https://natourswa.onrender.com/', '_blank');
 });
 
 
