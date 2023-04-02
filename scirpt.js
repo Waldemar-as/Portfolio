@@ -10,54 +10,54 @@ function adjust_sideway_background() {
   $('.BackgroundSideWay2').height(anchorHeightProjects2);
 }
 
+// Set the height of myimage
 function place_welcome_below_img() {
   const image = document.querySelector(".myimage");
   const welcomeHeading = document.querySelector("#Welcome h1");
   welcomeHeading.style.paddingTop = "450px";
 }
 
+//Animates the navbar toggle button
+function animateNavbarToggle() {
+  $('.first-button').on('click', function () {
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+    $('.animated-icon3').toggleClass('open');
+  });
+}
 
 // ###Functionos END###
 
 
-//Animates the navbar toggle button
-$(document).ready(function () {
-
-  $('.first-button').on('click', function () {
-
-    $('.animated-icon1').toggleClass('open');
-  });
-  $('.second-button').on('click', function () {
-
-    $('.animated-icon2').toggleClass('open');
-  });
-  $('.third-button').on('click', function () {
-
-    $('.animated-icon3').toggleClass('open');
-  });
-});
-
-
-// Listen for resize events on the window
-window.addEventListener('resize', function () {
-  adjust_sideway_background();
-});
 
 
 
-// Executes the code right away, does not have to wait untill the page is done loading.
+// Executes the code right away, does not have to wait until the page is done loading.
 place_welcome_below_img();
 
-
+//Animates the navbar toggle button
+animateNavbarToggle();
 
 // Loads when page is finished loading
 window.onload = function () {
   adjust_sideway_background();
 };
 
+// Listen for resize events on the window
+window.addEventListener('resize', function () {
+
+  // adjusts the sidways background of work and projects
+  adjust_sideway_background();
+
+});
 
 
-// Presses the toggle button to hide the navbar after an nav-link or nav-brand was pressed
+
+// triggers click event of the toggle(hamburger) button to hide the navbar after an nav-link or nav-brand was pressed
 document.addEventListener("click", function (event) {
   if (window.innerWidth < 768) {
     // Navitems
@@ -106,6 +106,9 @@ const toggleSelectedClass = (selector, condition) => {
   }
 };
 
+
+
+// sets an underline for the navbar items depending on where the user position is.
 window.addEventListener('scroll', () => {
   const currentPosition = window.scrollY;
 
