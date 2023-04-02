@@ -279,7 +279,7 @@ svg {
 
   /* font-weight: bold; */
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -597,29 +597,16 @@ div.card .card-header-primary {
 /* ###Footer###*/
 
 footer {
-  position: relative;
   width: 100%;
   min-height: 100px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   color: ghostwhite;
 }
 
-footer .social_icon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
 
 footer li {
   list-style: none;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 footer .social_icon li a {
@@ -632,16 +619,29 @@ footer a {
   transition: 0.5s;
 }
 
+footer svg {
+  height: 30px;
+}
 
 .footer_bottom {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  color: ghostwhite;
   background-color: var(--lighter);
   width: 100%;
-   margin-top: -5px; /*Damit beim scrollen auf dem handy keine lücke entsteht */
+  margin-top: -5px; /* Damit beim scrollen auf dem handy keine lücke entsteht */
+}
+
+footer .social_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 

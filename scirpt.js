@@ -116,38 +116,37 @@ const navbarBrand = document.querySelector('.navbar-brand');
 const aboutMeAnchor = document.querySelector('#AboutMeAnchor');
 const workAnchor = document.querySelector('#WorkAnchor');
 const projectsAnchor = document.querySelector('#ProjectsAnchor');
+const offsetNumber = 150;
+
+const toggleSelectedClass = (selector, condition) => {
+  if (condition) {
+    selector.classList.add('selected');
+  } else {
+    selector.classList.remove('selected');
+  }
+};
 
 window.addEventListener('scroll', () => {
-
   const currentPosition = window.scrollY;
 
-  var offsetnumber = 150;
+  toggleSelectedClass(navbarBrand, currentPosition <= aboutMeAnchor.offsetTop - offsetNumber);
 
-  if (currentPosition > aboutMeAnchor.offsetTop - offsetnumber) {
-    navbarBrand.classList.remove('selected');
-  } else {
-    navbarBrand.classList.add('selected');
-  }
+  toggleSelectedClass(
+    document.querySelector('.nav-link[href="#AboutMeAnchor"]'),
+    currentPosition >= aboutMeAnchor.offsetTop - offsetNumber && currentPosition < workAnchor.offsetTop - offsetNumber
+  );
 
-  if (currentPosition >= aboutMeAnchor.offsetTop - offsetnumber & currentPosition < workAnchor.offsetTop - offsetnumber) {
-    $('.nav-link[href="#AboutMeAnchor"]').addClass('selected');
-  } else {
-    $('.nav-link[href="#AboutMeAnchor"]').removeClass('selected');
-  }
+  toggleSelectedClass(
+    document.querySelector('.nav-link[href="#WorkAnchor"]'),
+    currentPosition >= workAnchor.offsetTop - offsetNumber && currentPosition < projectsAnchor.offsetTop - offsetNumber
+  );
 
-  if (currentPosition >= workAnchor.offsetTop - offsetnumber & currentPosition < projectsAnchor.offsetTop - offsetnumber) {
-    $('.nav-link[href="#WorkAnchor"]').addClass('selected');
-  } else {
-    $('.nav-link[href="#WorkAnchor"]').removeClass('selected');
-  }
-
-  if (currentPosition >= projectsAnchor.offsetTop - offsetnumber) {
-    $('.nav-link[href="#ProjectsAnchor"]').addClass('selected');
-  } else {
-    $('.nav-link[href="#ProjectsAnchor"]').removeClass('selected');
-  }
-
+  toggleSelectedClass(
+    document.querySelector('.nav-link[href="#ProjectsAnchor"]'),
+    currentPosition >= projectsAnchor.offsetTop - offsetNumber
+  );
 });
+
 
 
 
