@@ -10,7 +10,7 @@ function adjust_sideway_background() {
   $('.BackgroundSideWay2').height(anchorHeightProjects2);
 }
 
-function place_welcome_below_img(){
+function place_welcome_below_img() {
   const image = document.querySelector(".myimage");
   const welcomeHeading = document.querySelector("#Welcome h1");
   welcomeHeading.style.paddingTop = "450px";
@@ -36,22 +36,6 @@ $(document).ready(function () {
     $('.animated-icon3').toggleClass('open');
   });
 });
-
-
-
-
-//Show navbar when scrolled
-// Listen for scroll events on the document
-// $(function () {
-//   $(document).scroll(function () {
-//     // Get the element with id "mainNavbar"
-//     var $nav = $("#mainNavbar");
-//     // Toggle the class "scrolled" based on whether the document has been scrolled beyond the height of the element
-//     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-//   })
-// })
-
-
 
 
 // Listen for resize events on the window
@@ -89,8 +73,6 @@ document.addEventListener("click", function (event) {
 
 
 
-
-
 // acts as an ahref when clicking a card div in the projects section
 const CardHealthRules = document.getElementById('CardHealthRules');
 const CardPortfolio = document.getElementById('CardPortfolio');
@@ -106,8 +88,6 @@ CardPortfolio.addEventListener('click', function () {
 CardNatours.addEventListener('click', function () {
   window.open('https://natourswa.onrender.com/', '_blank');
 });
-
-
 
 
 
@@ -146,8 +126,6 @@ window.addEventListener('scroll', () => {
     currentPosition >= projectsAnchor.offsetTop - offsetNumber
   );
 });
-
-
 
 
 
