@@ -273,9 +273,9 @@ video {
   background-color: white; /* Just in case the video is not loading */
 }
 
+
 svg {
-  /* Wichtig, Updated das svg damit es in immer der Mitte bleibt. "dummy update"*/
-  font-size: min(max(0px, 11vw), 200vh);
+  font-size: min(max(0px, 11vw), 200vh); /* Wichtig!, Updated das svg damit es zentriert bleibt. "dummy update" beim ändern der seitengröße*/
 
   /* font-weight: bold; */
   overflow: hidden;
