@@ -279,7 +279,7 @@ svg {
 
   /* font-weight: bold; */
   overflow: hidden;
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -621,6 +621,7 @@ footer a {
 
 footer svg {
   height: 30px;
+  position: relative;
 }
 
 .footer_bottom {
