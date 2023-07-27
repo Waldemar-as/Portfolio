@@ -86,7 +86,7 @@ CardPortfolio.addEventListener('click', function () {
   window.location = 'index.html#Landingpage'
 });
 CardNatours.addEventListener('click', function () {
-  window.open('https://natourswa.onrender.com/', '_blank');
+  window.open('projects/natourswa.html', '_blank');
 });
 
 
