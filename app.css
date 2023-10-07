@@ -270,7 +270,7 @@ svg {
 
   /* font-weight: bold; */
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -291,12 +291,12 @@ svg {
 
 
 .headercenterdiv h1 {
-  /* transition: 1s;
+  transition: 1s;
   animation: ease-out changeopacity;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.0s;
-  opacity: 0; */
+  opacity: 0;
 
 
   margin: auto;
