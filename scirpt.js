@@ -80,7 +80,7 @@ const CardNatours = document.getElementById('CardNatours');
 
 // Add click event listeners to the cards
 CardHealthRules.addEventListener('click', function () {
-  window.open('https://10healthrules.netlify.app/index.html', '_blank');
+  window.open('https://10healthrules.vercel.app/', '_blank');
 });
 CardPortfolio.addEventListener('click', function () {
   window.location = 'index.html#Landingpage'
