@@ -528,10 +528,7 @@ footer li {
   margin-top: 5px;
 }
 
-footer .social_icon li a {
-  margin: 0 10px;
-  display: inline-block;
-}
+
 
 footer a {
   color: ghostwhite;
@@ -550,8 +547,10 @@ footer svg {
   flex-direction: column;
   background-color: var(--lighter);
   width: 100%;
-  margin-top: -5px;
-  /* Damit beim scrollen auf dem handy keine lücke entsteht */
+  margin-top: -5px;   /* Damit beim scrollen auf dem handy keine lücke entsteht */
+  gap: 5px;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 footer .social_icon {
@@ -560,9 +559,9 @@ footer .social_icon {
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-top: 15px;
   flex-wrap: wrap;
   padding: 0;
+  gap: 1rem;
 }
 
 
