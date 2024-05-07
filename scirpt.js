@@ -82,7 +82,7 @@ CardOdyssai.addEventListener('click', function () {
   window.open('projects/odyssai.html', '_blank');
 });
 CardHealthRules.addEventListener('click', function () {
-  window.open('https://10healthrules.vercel.app/', '_blank');
+  window.open('https://10healthrules.pages.dev/', '_blank');
 });
 CardPortfolio.addEventListener('click', function () {
   window.location = 'index.html#Landingpage'
