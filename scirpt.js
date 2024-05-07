@@ -43,16 +43,14 @@ place_welcome_below_img();
 animateNavbarToggle();
 
 // Loads when page is finished loading
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function() {
   adjust_sideway_background();
-};
+});
 
 // Listen for resize events on the window
 window.addEventListener('resize', function () {
-
   // adjusts the sidways background of work and projects
   adjust_sideway_background();
-
 });
 
 
@@ -74,11 +72,15 @@ document.addEventListener("click", function (event) {
 
 
 // acts as an ahref when clicking a card div in the projects section
+const CardOdyssai = document.getElementById('CardOdyssai');
 const CardHealthRules = document.getElementById('CardHealthRules');
 const CardPortfolio = document.getElementById('CardPortfolio');
 const CardNatours = document.getElementById('CardNatours');
 
 // Add click event listeners to the cards
+CardOdyssai.addEventListener('click', function () {
+  window.open('projects/odyssai.html', '_blank');
+});
 CardHealthRules.addEventListener('click', function () {
   window.open('https://10healthrules.vercel.app/', '_blank');
 });
