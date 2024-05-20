@@ -25,8 +25,6 @@ function animateNavbarToggle() {
 
 
 
-// Executes the code right away, does not have to wait until the page is done loading.
-place_welcome_below_img();
 
 //Animates the navbar toggle button
 animateNavbarToggle();
