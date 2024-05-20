@@ -311,6 +311,7 @@ svg {
 
 
 .myimage {
+  display: block;
   border-radius: 50%;
   max-height: 25vh;
   height: auto;
@@ -318,6 +319,12 @@ svg {
   margin: auto;
   z-index: 1;
   background-color: var(--lighter);
+}
+
+
+#Welcome {
+  margin-top: 1svh;
+  text-align: center; /* Center the text if needed */
 }
 
 /* ###Header Landingpage### */
@@ -438,7 +445,7 @@ div.card .card-header-primary {
 .nav-tabs .nav-item .nav-link.active {
   background-color: hsla(0, 0%, 100%, .2);
   transition: background-color .3s .2s;
-  color:#FD7121;
+  color: #FD7121;
 }
 
 .nav-tabs .nav-item .nav-link {

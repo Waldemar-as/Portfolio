@@ -2,7 +2,6 @@
 
 // Set the height of myimage
 function place_welcome_below_img() {
-  const image = document.querySelector(".myimage");
   const welcomeHeading = document.querySelector("#Welcome h1");
   welcomeHeading.style.paddingTop = "450px";
 }
