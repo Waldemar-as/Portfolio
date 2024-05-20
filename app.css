@@ -323,21 +323,25 @@ svg {
 
 
 
+/* ###AboutMe### */
+#AboutMeAnchor {
+  position: relative;
+  z-index: 1; /* Ensure it stays above the background */
+}
 
-
-
-/* ###About Me### */
-.BackgroundSideWay {
+#AboutMeAnchor::before {
+  content: '';
   position: absolute;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
-  /* min-height: 520px; Will be replaced my javascript, just to be sure when the skript fails */
+  height: 100%; /* Adjust height as needed */
   background: linear-gradient(134deg, var(--lighter) 0%, var(--darker));
   transform: skewY(-3deg);
   z-index: -1;
   pointer-events: none;
-  /* transition: 1s; */
 }
+
 
 
 .sideways {
@@ -471,21 +475,22 @@ div.card .card-header-primary {
 /* ###Where if Worked END###*/
 
 
+#ProjectsAnchor {
+  position: relative;
+  z-index: 1; /* Ensure it stays above the background */
+}
 
-
-
-
-/* ###Projects### */
-.BackgroundSideWay2 {
+#ProjectsAnchor::before {
+  content: '';
   position: absolute;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 520px;
+  height: 100%;
   background: linear-gradient(134deg, var(--lighter) 0%, var(--darker));
   transform: skewY(3deg);
   z-index: -1;
   pointer-events: none;
-  /* transition: 1s; */
 }
 
 

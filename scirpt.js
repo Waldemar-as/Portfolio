@@ -1,15 +1,5 @@
 // ###Functions###
 
-// adjusts the sidways background of work and projects
-function adjust_sideway_background() {
-  // Get the height of the element with id "anchor"
-  var anchorHeight2 = $('#anchorJSAboutMe').height();
-  var anchorHeightProjects2 = $('#anchorJSProjects').height();
-  // Set the height of the element with class "BackgroundSideWay" to the height of the element with id "anchor"
-  $('.BackgroundSideWay').height(anchorHeight2);
-  $('.BackgroundSideWay2').height(anchorHeightProjects2);
-}
-
 // Set the height of myimage
 function place_welcome_below_img() {
   const image = document.querySelector(".myimage");
@@ -42,16 +32,6 @@ place_welcome_below_img();
 //Animates the navbar toggle button
 animateNavbarToggle();
 
-// Loads when page is finished loading
-document.addEventListener("DOMContentLoaded", function() {
-  adjust_sideway_background();
-});
-
-// Listen for resize events on the window
-window.addEventListener('resize', function () {
-  // adjusts the sidways background of work and projects
-  adjust_sideway_background();
-});
 
 
 
@@ -133,13 +113,5 @@ window.addEventListener('scroll', () => {
 });
 
 
-
-// show more button
-$(document).ready(function () {
-  $("#toggleButton").click(function () {
-    $("#targetDiv").toggle();
-    adjust_sideway_background();
-  });
-});
 
 
