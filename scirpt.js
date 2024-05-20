@@ -1,36 +1,14 @@
-// ###Functions###
-
-// Set the height of myimage
-function place_welcome_below_img() {
-  const welcomeHeading = document.querySelector("#Welcome h1");
-  welcomeHeading.style.paddingTop = "450px";
-}
-
-//Animates the navbar toggle button
-function animateNavbarToggle() {
-  $('.first-button').on('click', function () {
-    $('.animated-icon1').toggleClass('open');
-  });
-  $('.second-button').on('click', function () {
-    $('.animated-icon2').toggleClass('open');
-  });
-  $('.third-button').on('click', function () {
-    $('.animated-icon3').toggleClass('open');
-  });
-}
-
-// ###Functionos END###
-
-
-
-
-
-
-//Animates the navbar toggle button
-animateNavbarToggle();
-
-
-
+// ### toggle(hamburger) ###
+//Animates the navbar toggle(hamburger) button
+$('.first-button').on('click', function () {
+  $('.animated-icon1').toggleClass('open');
+});
+$('.second-button').on('click', function () {
+  $('.animated-icon2').toggleClass('open');
+});
+$('.third-button').on('click', function () {
+  $('.animated-icon3').toggleClass('open');
+});
 
 // triggers click event of the toggle(hamburger) button to hide the navbar after an nav-link or nav-brand was pressed
 document.addEventListener("click", function (event) {
@@ -45,13 +23,10 @@ document.addEventListener("click", function (event) {
     }
   }
 });
+// ### toggle(hamburger) END ##
 
 
-
-
-
-
-
+// ### underline highlight ###
 // changes the navbar underline highlight depending on the position of the users view.
 const navbarBrand = document.querySelector('.navbar-brand');
 const aboutMeAnchor = document.querySelector('#AboutMeAnchor');
@@ -66,8 +41,6 @@ const toggleSelectedClass = (selector, condition) => {
     selector.classList.remove('selected');
   }
 };
-
-
 
 // sets an underline for the navbar items depending on where the user position is.
 window.addEventListener('scroll', () => {
@@ -90,7 +63,7 @@ window.addEventListener('scroll', () => {
     currentPosition >= projectsAnchor.offsetTop - offsetNumber
   );
 });
-
+// ### underline highlight END##
 
 
 
