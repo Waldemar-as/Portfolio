@@ -51,25 +51,7 @@ document.addEventListener("click", function (event) {
 
 
 
-// acts as an ahref when clicking a card div in the projects section
-const CardOdyssai = document.getElementById('CardOdyssai');
-const CardHealthRules = document.getElementById('CardHealthRules');
-const CardPortfolio = document.getElementById('CardPortfolio');
-const CardNatours = document.getElementById('CardNatours');
 
-// Add click event listeners to the cards
-CardOdyssai.addEventListener('click', function () {
-  window.open('projects/odyssai.html', '_blank');
-});
-CardHealthRules.addEventListener('click', function () {
-  window.open('https://10healthrules.pages.dev/', '_blank');
-});
-CardPortfolio.addEventListener('click', function () {
-  window.location = 'index.html#Landingpage'
-});
-CardNatours.addEventListener('click', function () {
-  window.open('projects/natourswa.html', '_blank');
-});
 
 
 

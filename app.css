@@ -266,7 +266,8 @@ video {
 
 
 svg {
-  font-size: min(max(0px, 11vw), 200vh); /* Wichtig!, Updated das svg damit es zentriert bleibt. "dummy update" beim ändern der seitengröße*/
+  font-size: min(max(0px, 11vw), 200vh);
+  /* Wichtig!, Updated das svg damit es zentriert bleibt. "dummy update" beim ändern der seitengröße*/
 
   /* font-weight: bold; */
   overflow: hidden;
@@ -326,7 +327,8 @@ svg {
 /* ###AboutMe### */
 #AboutMeAnchor {
   position: relative;
-  z-index: 1; /* Ensure it stays above the background */
+  z-index: 1;
+  /* Ensure it stays above the background */
 }
 
 #AboutMeAnchor::before {
@@ -335,7 +337,8 @@ svg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Adjust height as needed */
+  height: 100%;
+  /* Adjust height as needed */
   background: linear-gradient(134deg, var(--lighter) 0%, var(--darker));
   transform: skewY(-3deg);
   z-index: -1;
@@ -364,7 +367,7 @@ h2 {
 
 
 
-/* Where if Worked */
+/* Where i've Worked */
 .tab-pane img {
   max-height: 50px;
 }
@@ -464,20 +467,15 @@ div.card .card-header-primary {
   position: relative;
 }
 
-.card {
-  border-radius: 0px;
-}
 
-.card-header:first-child {
-  border-radius: 0px;
-}
 
 /* ###Where if Worked END###*/
 
 
 #ProjectsAnchor {
   position: relative;
-  z-index: 1; /* Ensure it stays above the background */
+  z-index: 1;
+  /* Ensure it stays above the background */
 }
 
 #ProjectsAnchor::before {
@@ -510,6 +508,38 @@ div.card .card-header-primary {
 .PubGit {
   color: var(--underline-and-h1-3);
 }
+
+
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  width: 100%;
+  height: 100%;
+}
+
+
+.card {
+  border-radius: 5px;
+  height: 100%;
+  cursor: pointer
+}
+
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cardhref {
+  display: flex;
+  flex-direction: column;
+  min-width: 0px
+}
+
 
 
 /* ###Projects END ### */
@@ -552,7 +582,8 @@ footer svg {
   flex-direction: column;
   background-color: var(--lighter);
   width: 100%;
-  margin-top: -5px;   /* Damit beim scrollen auf dem handy keine lücke entsteht */
+  margin-top: -5px;
+  /* Damit beim scrollen auf dem handy keine lücke entsteht */
   gap: 5px;
   padding-top: 5px;
   padding-bottom: 15px;
